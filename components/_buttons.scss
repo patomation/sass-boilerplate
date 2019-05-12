@@ -1,0 +1,15 @@
+button{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $button-bg;
+  color: $button-color;
+  border: $border-color 2px solid;
+  border-radius: 1rem;
+}
+button:hover{
+  background-color: $button-hover-bg;
+  color: $button-hover-color;
+  border: $button-hover-border 2px solid;
+}

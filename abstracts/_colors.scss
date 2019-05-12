@@ -1,0 +1,103 @@
+//Color Pallet
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+
+// HTML COLOR VARIABLES
+$body-bg:             rgba(0,0,0,0);
+$body-color:          theme-color('dark');
+
+$main-bg:             $white;
+
+$nav-color:           theme-color('dark');
+
+$header-bg:           rgba($white,0.0);
+$header-color:        $white;
+
+$link-color:          theme-color("secondary");
+$link-hover-color:    darken($link-color, 15%);
+
+$code-color: theme-color('light') !important;
+$code-bg: darken(theme-color('primary'), 15%);
+
+$footer-color: theme-color('dark');
+$footer-bg: theme-color('primary');
+
+$border-color: theme-color('secondary');
+$shadow-color: darken(theme-color('dark'), 5%);
+
+$button-bg: theme-color('primary');
+$button-color: theme-color('dark');
+$button-border: $border-color;
+$button-hover-bg: theme-color('dark');
+$button-hover-color: theme-color('light');
+$button-hover-border: theme-color('light');
+
+$cta-button-bg: $red;
+$cta-button-color: $white;
+
+// HTML ELEMENT COLORS
+.light{
+  color: theme-color('dark');
+  background-color: theme-color('light');
+}
+.dark{
+  color: theme-color('light');
+  background-color: theme-color('dark');
+}
+.darker{
+  color: theme-color('light');
+  background-color: theme-color('darker');
+}
+
+
+nav{
+  color: $nav-color;
+  @include gradient(theme-color('primary'),theme-color('secondary'));
+  @include drop-shadow-bottom($shadow-color);
+}
+.navbar-brand{
+    color: $nav-color !important;
+}
+
+header{
+  color: $header-color;
+  background-color: $header-bg;
+}
+.profile-image{
+  border: $border-color solid 2px;
+}
+
+main{
+  background-color: $main-bg;
+}
+
+code{
+  background-color: $code-bg;
+}
+
+footer{
+  color: $footer-color;
+  background-color: $footer-bg;
+}
+
+i.active{
+  color: theme-color('primary');
+}

@@ -1,0 +1,56 @@
+//Import required parts of bootstrap
+@import 'vendors/bootstrap_required';
+
+//Customize things
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/colors';
+
+//Import The rest of Boostrap parts
+@import 'vendors/bootstrap_custom';
+
+//BASE
+@import 'base/typography';
+@import 'base/reset'; //my custom browser/bootstrap resets
+@import 'base/margins';
+
+// Layout
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+//Components
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/slider';
+@import 'components/projects';
+@import 'components/call-to-action';
+@import 'components/reviews';
+@import 'components/form';
+@import 'components/stars';
+
+
+//Classes
+@import 'classes/body';
+@import 'classes/main';
+@import 'classes/section';
+@import 'classes/code';
+@import 'classes/profile-image';
+@import 'classes/category';
+@import 'classes/square-image';
+@import 'classes/full-page-background';
+
+
+//Pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/blog';
+
+// Themes
+@import 'themes/theme';
+@import 'themes/admin';

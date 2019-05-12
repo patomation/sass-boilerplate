@@ -1,0 +1,14 @@
+.profile-image{
+  height:250px;
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.profile-image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
