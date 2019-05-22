@@ -1,0 +1,44 @@
+$colors: (
+  // base color palette
+  'brand-blue'   : hsl(195, 100%, 43%),
+  'brand-red'  : hsl(0, 100%, 50%),
+  'brand-orange' : hsl(330, 100%, 45%),
+
+  // color style guide
+  'background'   : hsl(0, 0%, 100%),
+  // 'text'         : darken('brand-blue', 80%),
+  'action'       : 'brand-red',
+  'focus'        : 'brand-orange',
+  'link'         : 'brand-blue',
+  'hover'        : 'brand-orange',
+  'light'        : #ffffff,
+  'dark'         : #000000,
+);
+
+$element-colors: (
+  'body-bg'             : colors('background'),
+  'body-color'          : colors('text'),
+  'main-bg'             : colors('background'),
+  'nav-color'           : colors('text'),
+  'nav-bg'              : colors('brand-blue'),
+  'header-bg'           : colors('background'),
+  'header-color'        : colors('text'),
+  'link-color'          : colors('link'),
+  'link-hover-color'    : colors('hover'),
+  'code-bg'             : colors('background'),
+  'code-color'          : colors('text'),
+  'footer-bg'           : colors('background'),
+  'footer-color'        : colors('text'),
+  'border-color'        : colors('border'),
+  'shadow-color'        : colors('dark'),
+  'button-color'        : colors('light'),
+  'button-bg'           : colors('brand-blue'),
+  'button-border'       : colors('border'),
+  'button-hover-bg'     : colors('link'),
+  'button-hover-color'  : colors('hover'),
+  'button-hover-border' : colors('border'),
+  'cta-button-bg'       : colors('link'),
+  'cta-button-color'    : colors('light'),
+);
+
+//Override Bootstrap Color Variables
