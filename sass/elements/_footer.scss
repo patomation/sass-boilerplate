@@ -1,0 +1,11 @@
+footer {
+  background-color: element-color('footer-bg');
+  color: element-color('footer-color');
+  text-align: center;
+  //Sticky footer
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: size('footer-height');
+  line-height: size('footer-height');
+}

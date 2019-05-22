@@ -1,0 +1,23 @@
+$fonts: (
+  // hosted web font
+  'body': (
+    'name': 'akzidenz-light',
+    'stack': ( Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif ),
+    'light': 'akzidenz-light', // webfont file names...
+    'regular': 'akzidenz-regular',
+    'italic': 'akzidenz-italic',
+    'bold': 'akzidenz-bold',
+    'black': 'akzidenz-black',
+  ),
+
+  // web-safe font stack
+  'code': (
+    'name': 'Consolas',
+    'stack': ('Menlo', 'Monaco', 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', 'monospace', 'serif')
+  ),
+
+  'heading': (
+    'name': 'akzidenz-black',
+    'stack': ( Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif ),
+  ),
+);

@@ -1,0 +1,8 @@
+body {
+  overflow-x: hidden;
+  font-family: font('body');
+  font-size: size('body-text');
+  //Sticky Footer Stuff
+  margin-bottom: size('footer-height');
+  padding-bottom: 1rem;
+}

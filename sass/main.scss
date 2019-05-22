@@ -1,56 +1,27 @@
-//Import required parts of bootstrap
-@import 'vendors/bootstrap_required';
+// ##################################
+// ### ITCSS - Invertied Triangle ###
+// ##################################
 
-//Customize things
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/colors';
+// SETTINGS - fonts, colors, definitions
+@import 'settings/all'; //Bootstrap required import is here
 
-//Import The rest of Boostrap parts
-@import 'vendors/bootstrap_custom';
+// TOOLS - globaly used mixins and functions
+@import 'tools/all';
 
-//BASE
-@import 'base/typography';
-@import 'base/reset'; //my custom browser/bootstrap resets
-@import 'base/margins';
+// GENERIC - reset /normalizing styles, box sizing, first layer that generates css
+@import 'generic/all'; //Bootstrap: The rest of bootstrap is here
 
-// Layout
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
+// ELEMENTS - Bare html elements h1,A, p ect
+@import 'elements/all';
 
-//Components
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/slider';
-@import 'components/projects';
-@import 'components/call-to-action';
-@import 'components/reviews';
-@import 'components/form';
-@import 'components/stars';
+// OBJECTS - Class based selectors - undecorated design patterns
+@import 'objects/all';
+
+// COMPONENTS - Specific UI components - composed of objects and compoentns
+@import 'components/all';
+
+// UTILITIES - Overrides
+@import 'utilities/all';
 
 
-//Classes
-@import 'classes/body';
-@import 'classes/main';
-@import 'classes/section';
-@import 'classes/code';
-@import 'classes/profile-image';
-@import 'classes/category';
-@import 'classes/square-image';
-@import 'classes/full-page-background';
-
-
-//Pages
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/contact';
-@import 'pages/blog';
-
-// Themes
-@import 'themes/theme';
-@import 'themes/admin';
+//

@@ -1,0 +1,19 @@
+$base-text: 1rem;
+
+$sizes: (
+  // base font size
+  'body-text': $base-text,
+
+  // type sizes
+  'h1': $base-text*3,      //Minor-third 3 ????
+  'h2': $base-text*2,      //Minor-third 2
+  'h3': $base-text*1,      //Minor-third 1
+  'h4': $base-text*1,      //Minor-third 1
+  'h5': $base-text*1,      //Minor-third 1
+  'h6': $base-text*1,      //Minor-third 1
+
+  // other
+  'corners': 3px,
+  'footer-height': 60px,
+  'border': 0.10rem,
+);

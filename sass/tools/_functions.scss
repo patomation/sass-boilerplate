@@ -1,0 +1,64 @@
+//Get key value from deep within a map
+@function deep-map-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+
+//Get nested color key value from color map
+@function color($keys...) {
+  $map: $colors;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+// Get nested Element Colors
+@function element-color($keys...) {
+  $map: $element-colors;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+// Get nested fonts
+@function font($keys...) {
+  $map: $fonts;
+  $value: '';
+
+  //If only one key is provided get name + stack
+  // Example font('body') retunrs default + stack
+  @if length($keys) == 1 {
+    $key: nth($keys, 1);
+    $value: deep-map-get($fonts, $key, 'name'), deep-map-get($fonts, $key, 'stack');
+
+  // If two keys, than get the specified name + stack
+  // Example font('body', 'bold') retunrs bold + stack
+  } @else {
+    $key1: nth($keys, 1);
+    $key2: nth($keys, 2);
+    $value: deep-map-get($fonts, $key1, $key2), deep-map-get($fonts, $key1, 'stack');
+  }
+
+  @return $value;
+}
+
+// Get nested Element Colors
+@function global($keys...) {
+  $map: $globals;
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+//Get size key value from color map
+@function size($key) {
+  @if map-has-key($sizes, $key) {
+    @return map-get($sizes, $key);
+  }
+}

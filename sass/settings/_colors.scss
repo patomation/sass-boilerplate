@@ -1,0 +1,96 @@
+//Some solarized colors
+$yellow    : #b58900;
+$orange    : #cb4b16;
+$red       : #d30102;
+$magenta   : #d33682;
+$violet    : #6c71c4;
+$blue      : #268bd2;
+$cyan      : #2aa198;
+$green     : #859900;
+
+// Registration Black
+$brand-black: hsla(0%, 0%, 0%, 1);
+// Purple Taupe
+$brand-purple: hsla(307%, 26%, 25%, 1);
+// Old Lavender
+$brand-lavender: hsla(280%, 17%, 42%, 1);
+// Lavender Gray
+$brand-lavender-gray: hsla(267%, 33%, 79%, 1);
+// White Smoke
+$brand-white-smoke: hsla(348%, 29%, 97%, 1);
+
+$colors: (
+  // base color palette
+  'brand-black'         : $brand-black,
+  'brand-purple'        : $brand-purple,
+  'brand-lavender'      : $brand-lavender,
+  'brand-lavender-gray' : $brand-lavender-gray,
+  'brand-white-smoke'   : $brand-white-smoke,
+
+  //Accessing the solarized colors
+  'yellow'    : $yellow ,
+  'orange'    : $orange ,
+  'red'       : $red    ,
+  'magenta'   : $magenta,
+  'violet'    : $violet ,
+  'blue'      : $blue   ,
+  'cyan'      : $cyan   ,
+  'green'     : $green  ,
+
+  // color style guide
+  'background'   : hsl(0, 0%, 100%),
+  'text'         : darken($brand-purple, 80%),
+  'action'       : $brand-purple,
+  'focus'        : $brand-purple,
+  'link'         : $brand-purple,
+  'hover'        : $brand-lavender,
+  'light'        : #ffffff,
+  'dark'         : $brand-black,
+  'darker'       : $brand-black,
+  'darkest'      : $brand-black,
+  'none'         : rgba(0,0,0,0),
+);
+
+
+$element-colors: (
+  'body-bg'             : color('background'),
+  'body-color'          : color('text'),
+
+  'main-bg'             : color('background'),
+
+  'nav-color'           : color('text'),
+  'nav-bg'              : color('brand-blue'),
+
+  'header-bg'           : color('brand-black'),
+  'header-color'        : color('light'),
+
+  'heading-color'       : color('blue'),
+  'li-color'            : color('magenta'),
+
+  'link-color'          : color('brand-purple'),
+  'link-bg'             : color('none'),
+  'link-hover-color'    : color('brand-lavender'),
+  'link-hover-bg'       : color('none'),
+
+  'code-bg'             : color('background'),
+  'code-color'          : color('text'),
+
+  'footer-bg'           : color('dark'),
+  'footer-color'        : color('light'),
+
+  'border-color'        : color('border'),
+  'shadow-color'        : color('dark'),
+
+  'button-color'        : color('light'),
+  'button-bg'           : color('brand-purple'),
+  'button-border'       : color('border'),
+
+  'button-hover-color'  : color('light'),
+  'button-hover-bg'     : darken(color('brand-purple'), 10%),
+  'button-hover-border' : color('border'),
+
+  'cta-button-bg'       : color('link'),
+  'cta-button-color'    : color('light'),
+);
+
+//Override Bootstrap Color Variables

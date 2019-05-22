@@ -1,0 +1,9 @@
+a {
+  background-color: element-color('link-bg');
+  color: element-color('link-color');
+}
+
+a:hover{
+  background-color: element-color('link-hover-bg');
+  color: element-color('link-hover-color');
+}

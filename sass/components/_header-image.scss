@@ -1,0 +1,8 @@
+.header-image{
+  width: 50%;
+  margin: 0 auto; // Center it
+  @include media-breakpoint-up(md){
+      width: 50%;
+  }
+  margin-bottom: 1rem;
+}

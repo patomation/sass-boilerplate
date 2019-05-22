@@ -1,0 +1,38 @@
+.post-list-heading{
+
+}
+.post-list{
+  list-style-type: none;
+  padding: 0;
+}
+.post-title{
+  padding-top: 1rem;
+}
+.post-exerpt{
+  @include media-breakpoint-up(md){
+    padding-top: 3rem;
+  }
+}
+.post-icon{
+  display: none;
+  @include media-breakpoint-up(md){
+    display: block;
+  }
+}
+.post-icon i{
+  @include vertical-align();
+}
+
+.post-item {
+  position: relative;
+  padding-bottom: 1rem;
+}
+.post-meta{
+
+}
+.post-link{
+
+}
+.post-dot{
+  color: $purple;
+}
