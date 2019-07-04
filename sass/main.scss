@@ -3,25 +3,25 @@
 // ##################################
 
 // SETTINGS - fonts, colors, definitions
-@import 'settings/all';
+@import '1_settings/all';
 
 // TOOLS - globaly used mixins and functions
-@import 'tools/all';
+@import '2_tools/all';
 
 // GENERIC - reset /normalizing styles, box sizing, first layer that generates css
-@import 'generic/all';
+@import '3_generic/all';
 
 // ELEMENTS - Bare html elements h1,A, p ect
-@import 'elements/all';
+@import '4_elements/all';
 
 // OBJECTS - Class based selectors - undecorated design patterns
-@import 'objects/all';
+@import '5_objects/all';
 
 // COMPONENTS - Specific UI components - composed of objects and compoentns
-@import 'components/all';
+@import '6_components/all';
 
 // UTILITIES - Overrides
-@import 'utilities/all';
+@import '7_utilities/all';
 
 
 //
