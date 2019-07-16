@@ -1,0 +1,25 @@
+{
+  "name": "sass-boilerplate",
+  "version": "0.2.0",
+  "description": "Inverted Triagle CSS Sass boilerplate with bootstrap",
+  "main": "sass/main.scss",
+  "scripts": {
+    "test": "node-sass sass/main.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/patomation/sass-boilerplate.git"
+  },
+  "keywords": [
+    "sass",
+    "boilerplate",
+    "styles",
+    "css"
+  ],
+  "author": "Patrick Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patomation/sass-boilerplate/issues"
+  },
+  "homepage": "https://github.com/patomation/sass-boilerplate#readme"
+}

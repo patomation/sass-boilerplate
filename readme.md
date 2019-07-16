@@ -1,41 +1,47 @@
 # Sass Boilerplate including Bootstrap
-
+Inverted Triangle CSS structure
 Get started easily with sass styles with this customizable boilerplate.
 
 # Getting Started
 Copy into ```_sass``` folder and import ```main.scss```
 
-# Documentation
+### Test compiles correctly into css
+```
+npm test
+```
 
-- [abstracts](#abstracts)
-- [base](#base)
-- [classes](#classes)
-- [components](#components)
-- [layout](#layout)
-- [pages](#pages)
-- [themes](#themes)
+
+# Documentation Inverted
+
+- [1_settings](#1_settings)
+- [2_tools](#2_tools)
+- [3_generic](#3_generic)
+- [4_elements](#4_elements)
+- [5_objects](#5_objects)
+- [6_components](#6_components)
+- [7_utilities](#7_utilities)
 - [vendor](#vendor)
 
-{:#abstracts}
-### abstracts
+{:#1_settings}
+### 1_settings
 
-{:#base}
-### base
+{:#2_tools}
+### 2_tools
 
-{:#classes}
-### classes
+{:#3_generic}
+### 3_generic
 
-{:#components}
-### components
+{:#4_elements}
+### 4_elements
 
-{:#layout}
-### layout
+{:#5_objects}
+### 5_objects
 
-{:#pages}
-### pages
+{:#6_components}
+### 6_components
 
-{:#themes}
-### themes
+{:#7_utilities}
+### 7_utilities
 
 {:#vendor}
 ### vendor
