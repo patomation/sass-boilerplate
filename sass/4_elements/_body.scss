@@ -1,3 +1,7 @@
 body {
   overflow-x: hidden;
+  font-size: size('body-text');
+  line-height: size('line-height');
+  color: color('body-color');
+  background-color: color('body-bg');
 }

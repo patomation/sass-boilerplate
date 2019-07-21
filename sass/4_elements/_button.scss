@@ -1,3 +1,14 @@
-button { 
+button {
+  padding: size('padding');
+  border-radius: size('corners');
+  background-color: color('button-bg');
+  color: color('button-color');
+  border: size('border') solid color('button-border');
+  cursor: pointer;
+}
 
+button:hover {
+  background-color: color('button-hover-bg');
+  color: color('button-hover-color');
+  border: size('border') solid color('button-hover-border');
 }

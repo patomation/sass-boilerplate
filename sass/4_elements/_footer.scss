@@ -1,3 +1,5 @@
-footer { 
-
+footer {
+  background-color: color('footer-bg');
+  color: color('footer-color');
+  padding: size('padding');
 }
