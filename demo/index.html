@@ -15,17 +15,42 @@
 
     <main>
 
+      <form>
+        <input placeholder="Email" type="email"></input>
+        <input placeholder="Password" type="password"></input>
+        <button>submit</button>
+      </form>
+
+
       <menu>A menu</menu>
 
       <a href="#">A link</a>
 
+
       <section>
         Section 1
+        <textarea row="5"></textarea>
       </section>
 
       <section>
         Section 2
       </section>
+
+      <p>
+        Let's do it again then, what the <strong>heck</strong>. We'll put all the little clouds in and let them dance around and have fun. We don't need any guidelines or formats. All we need to do is just let it flow right out of us. Nature is so fantastic, enjoy it. Let it make you happy. And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right.
+      </p>
+
+      <code type="text/python">
+        elements = ["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","pre","progress","q","rb","rp","rt","rtc","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","template","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr"]
+
+        for element in elements:
+            print 'making file: _'+element+'.scss'
+            file = open("sass/elements_test/_"+element+".scss", "a")
+            file.write(element+" { \n")
+            file.write("\n")
+            file.write("}")
+            file.close()
+      </code>
 
       <ol>
         <li>List item 1</li>
@@ -45,10 +70,13 @@
       <h4>Heading</h4>
       <h5>Heading</h5>
       <h6>Heading</h6>
-      <h6>Heading</h6>
-
+      <p>Regular Text</p>
       <button>Button</button>
 
     </main>
+    <footer>
+      Footer Text,
+      <a href="#">link</a>
+    </footer>
   </body>
 </html>
