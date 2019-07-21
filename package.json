@@ -4,6 +4,7 @@
   "description": "Inverted Triagle CSS Sass boilerplate with bootstrap",
   "main": "sass/main.scss",
   "scripts": {
+    "start": "webpack-dev-server --mode development --hot --livereloading --open",
     "test": "node-sass sass/main.scss css/styles.css"
   },
   "repository": {
@@ -21,5 +22,19 @@
   "bugs": {
     "url": "https://github.com/patomation/sass-boilerplate/issues"
   },
-  "homepage": "https://github.com/patomation/sass-boilerplate#readme"
+  "homepage": "https://github.com/patomation/sass-boilerplate#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
 }
