@@ -1,39 +1,67 @@
 $colors: (
-  'brand-blue'   : hsl(195, 100%, 43%),
-  'brand-red'  : hsl(0, 100%, 50%),
-  'brand-orange' : hsl(330, 100%, 45%),
-  'background'   : #000000,
-  'text'         : #ffffff,
-  'action'       : 'brand-red',
-  'focus'        : 'brand-orange',
-  'link'         : 'brand-blue',
-  'hover'        : 'brand-orange',
-  'light'        : gray,
-  'dark'         : #000000,
+  //THEME
+  'YellowGreen'  : hsla(88%, 60%, 50%, 1),
+  'PastelBlue'   : hsla(167%, 27%, 72%, 1),
+  'VeryPaleYellow': hsla(77%, 100%, 89%, 1),
+  'OliveDrab'    : hsla(45%, 31%, 18%, 1),
+  'SmokyBlack'   : hsla(41%, 100%, 3%, 1),
+  'primary'      : 'YellowGreen',
+  'secondary'    : 'PastelBlue',
+  'light'        : 'VeryPaleYellow',
+  'dark'         : 'OliveDrab',
 
+  //Main
+  'background'   : 'SmokyBlack',
+  'text'         : 'light',
+  'action'       : 'secondary',
+  'focus'        : 'primary',
+  'link'         : 'primary',
+  'hover'        : 'secondary',
+  'warn'         : hsl(330, 100%, 45%),
+  'error'        : hsl(0, 100%, 50%),
+
+  //Element Colors
   'body-bg'             : 'background',
   'body-color'          : 'text',
+
   'main-bg'             : 'background',
   'nav-color'           : 'text',
-  'nav-bg'              : 'brand-blue',
-  'header-bg'           : 'background',
+  'nav-bg'              : 'primary',
+
+  'header-bg'           : 'dark',
   'header-color'        : 'text',
+
+  'footer-bg'           : 'dark',
+  'footer-color'        : 'text',
+
+  //Links
   'link-color'          : 'link',
   'link-hover-color'    : 'hover',
+
   'code-bg'             : 'background',
-  'code-color'          : 'text',
-  'footer-bg'           : 'background',
-  'footer-color'        : 'text',
+  'code-color'          : 'secondary',
+
   'border-color'        : 'border',
   'shadow-color'        : 'dark',
 
-  'button-color'        : 'light',
-  'button-bg'           : 'brand-blue',
+  'border'              : 'primary',
+
+  'input-color'         : 'body-color',
+  'input-bg'            : 'body-bg',
+  'input-border-color'  : 'border',
+
+  //Button
+  'button-color'        : 'dark',
+  'button-bg'           : 'link',
   'button-border'       : 'border',
-  'button-hover-bg'     : 'link',
-  'button-hover-color'  : 'hover',
+  //Button:hover
+  'button-hover-color'  : 'dark',
+  'button-hover-bg'     : 'hover',
   'button-hover-border' : 'border',
 
+  'strong-color'        : 'primary',
+  'strong-bg'           : 'background',
+
   'cta-button-bg'       : 'link',
-  'cta-button-color'    : 'light',
+  'cta-button-color'    : 'light'
 );

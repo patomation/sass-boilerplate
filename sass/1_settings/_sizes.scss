@@ -1,14 +1,25 @@
+$ratio: 'minor-third';
+
 $sizes: (
   // base font size
-  'body-text': 1rem,
+  'body-text'   : 1rem,
+  'number'      : 1,
+  'line-height' : ($ratio: 1),
+
+  'padding'     : 'body-text' ($ratio: -5),
+  'margin'      : 'body-text' ($ratio: -2),
 
   // type sizes
-  // 'rhythm': 'body-text' ('minor-third': 2),
-  // 'h1': 'body-text' ('minor-third': 3),
-  // 'h2': 'body-text' ('minor-third': 2),
-  // 'h3': 'body-text' ('minor-third': 1),
+  'rhythm'      : 'body-text' ($ratio: 2), //
+  'h1'          : 'body-text' ($ratio: 6), //
+  'h2'          : 'body-text' ($ratio: 5), //
+  'h3'          : 'body-text' ($ratio: 4), //
+  'h4'          : 'body-text' ($ratio: 3), // 4.5
+  'h5'          : 'body-text' ($ratio: 2), // 3
+  'h6'          : 'body-text' ($ratio: 1), // 1.50
 
   // other
-  'corners': 3px,
-  'page': 30rem,
+  'border'      : 2px,
+  'corners'     : 3px,
+  'page'        : 30rem
 );
