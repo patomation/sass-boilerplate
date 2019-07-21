@@ -1,0 +1,18 @@
+@function pow($number, $exponent){
+  //Handle Negative Exponents
+  @if ($exponent < 0){
+    $number: ( 1 / $number );
+    $exponent: -($exponent);
+  }
+  //Set result to inital number
+  $result: 1;
+  //Do not run if exponent is 0 return 1 instead
+  @if($exponent != 0){
+    // 2^2 = 2*2, 2^3 = 2*2*2 and so on
+    @for $i from 1 through $exponent{
+      $result: $result * $number;
+    }
+  }
+
+  @return $result;
+}

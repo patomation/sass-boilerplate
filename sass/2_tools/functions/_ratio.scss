@@ -1,0 +1,4 @@
+@function ratio($exponent, $ratioType: 'minor-third'){
+    $ratio: map-get($ratios, $ratioType);
+    @return pow($ratio, $exponent);
+}

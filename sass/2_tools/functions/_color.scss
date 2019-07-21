@@ -1,0 +1,7 @@
+@function color($key){
+  $value: linked-map-get($colors, $key);
+  @if $value == null {
+    $value: red;
+  }
+  @return $value;
+}

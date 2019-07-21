@@ -1,0 +1,25 @@
+@function size($key){
+
+  $value: linked-map-get($sizes, $key);
+
+  //Handle ratios is the data looks like this
+  //EXAMPLE: 'h3': 'body-text' ('minor-third': 1),
+  //EXAMPLE: '$key': '$sourceValue' ('$ratioType': $exponent),
+  @if type_of($value) == 'list'{
+    $sourceValue: linked-map-get($sizes, nth($value, 1));
+    $ratioType: nth( nth( nth($value, 2), 1), 1);
+    $exponent: nth( nth( nth($value, 2), 1), 2);
+    $ratio: ratio($exponent, $ratioType);
+    $value: $ratio * $sourceValue;
+  }
+  //IF ITS A MAP:
+  //EXAMPLE: 'line-height': ('golden-ratio': 1), returns 1.681 or something
+  @if type_of($value) == 'map'{
+    $ratioType: nth( nth($value, 1), 1);
+    $exponent: nth( nth($value, 1), 2);
+    $ratio: ratio($exponent, $ratioType);
+    $value: $ratio;
+  }
+
+  @return $value;
+}
