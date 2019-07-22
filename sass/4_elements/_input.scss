@@ -1,8 +1,3 @@
 input {
-  padding: size('padding');
-  border-radius: size('corners');
-  border: size('border') solid color('input-border-color');
-
-  color: color('input-color');
-  background-color: color('input-bg');
+  @include input();
 }

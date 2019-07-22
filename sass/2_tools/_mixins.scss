@@ -36,3 +36,17 @@
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
+// box-sizing: content-box;
+@mixin input(){
+  width: 100%;
+  box-sizing: content-box;
+  display: block;
+  margin: 0 auto;
+
+  padding: size('padding');
+  border-radius: size('corners');
+  border: size('border') solid color('input-border-color');
+
+  color: color('input-color');
+  background-color: color('input-bg');
+}
