@@ -55,4 +55,6 @@
 
   color: color('input-color');
   background-color: color('input-bg');
+  //Fixes overlapping parent boundary/margins
+  box-sizing:border-box
 }
