@@ -58,3 +58,21 @@
   //Fixes overlapping parent boundary/margins
   box-sizing:border-box
 }
+
+@mixin grid($columns: 12, $rows: 0, $gap: 0){
+  $width: 100%/$columns;
+  $height: 100%/$rows;
+  display: grid;
+  grid-gap: $gap;
+  grid-template-columns: unquote(repeat($columns, $width));
+  @if $rows > 0 {
+    grid-template-rows: unquote(repeat($rows, $height));
+  }
+  justify-items: stretch;
+  grid-template-rows: unquote(repeat(12, $height));
+}
+
+@mixin grid-item($colStart: 1, $colSpan: 1, $rowStart: 0, $rowSpan: 0){
+  grid-column: $colStart / span $colSpan;
+  grid-row: $rowStart / span $rowSpan;
+}

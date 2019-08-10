@@ -1,0 +1,17 @@
+.grid{
+  @include grid(12);
+  position: relative;
+}
+.col    { @include grid-item(auto, auto); }
+.col-1  { @include grid-item(auto, 1); }
+.col-2  { @include grid-item(auto, 2); }
+.col-3  { @include grid-item(auto, 3); }
+.col-4  { @include grid-item(auto, 4); }
+.col-5  { @include grid-item(auto, 5); }
+.col-6  { @include grid-item(auto, 6); }
+.col-7  { @include grid-item(auto, 7); }
+.col-8  { @include grid-item(auto, 8); }
+.col-9  { @include grid-item(auto, 9); }
+.col-10 { @include grid-item(auto,10); }
+.col-11 { @include grid-item(auto,11); }
+.col-12 { @include grid-item(auto,12); }
