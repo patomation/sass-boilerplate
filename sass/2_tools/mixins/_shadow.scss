@@ -1,0 +1,19 @@
+@mixin drop-shadow($color){
+  $offset-x: 0;
+  $offset-y: 0;
+  $blur-radius: 1rem;
+  filter: drop-shadow($offset-x $offset-y $blur-radius $color);
+}
+
+@mixin drop-shadow-bottom($color){
+  $offset-x: 0;
+  $offset-y: 0.25rem;
+  $blur-radius: 1rem;
+  filter: drop-shadow($offset-x $offset-y $blur-radius $color);
+}
+
+@mixin inner-shadow($color){
+  -moz-box-shadow:    inset 0 0 10px $color;
+  -webkit-box-shadow: inset 0 0 10px $color;
+  box-shadow:         inset 0 0 10px $color;
+}

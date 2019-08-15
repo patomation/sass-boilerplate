@@ -1,0 +1,42 @@
+@mixin input(){
+  width: 100%;
+  box-sizing: content-box;
+  display: block;
+  margin: 0 auto;
+
+  padding: size('padding');
+  border-radius: size('corners');
+  border: size('border') solid color('input-border-color');
+
+  color: color('input-color');
+  background-color: color('input-bg');
+  //Fixes overlapping parent boundary/margins
+  box-sizing:border-box;
+
+  //Placeholder color
+  &::placeholder{
+    color: color('input-placeholder');
+    opacity: 1;
+
+  }
+  // Internet Explorer
+  &:-ms-input-placeholder{
+    color: color('input-placeholder');
+    opacity: 1;
+  }
+  //Edge
+  &::-ms-input-placeholder{
+    color: color('input-placeholder');
+    opacity: 1;
+  }
+
+  //First option
+  & option:first-of-type {
+    // color: color('input-color');
+  }
+  
+  //Select option color
+  & option:not(:first-of-type) {
+    color: color('input-color');
+  }
+}

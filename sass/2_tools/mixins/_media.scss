@@ -1,0 +1,82 @@
+$xs-width:   320px;  // smartphones, iPhone, portrait 480x320 phones
+$sm-width:   481px;  // portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+$md-width:   641px;  // portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+$lg-width:   961px;  // tablet, landscape iPad, lo-res laptops ands desktops
+$xl-width:  1025px;  // big landscape tablets, laptops, and desktops
+$xxl-width: 1281px;  // hi-res laptops and desktops
+
+
+@mixin xs {
+  @media (min-width: #{$xs-width}) and (max-width: #{$sm-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$md-width}) and (max-width: #{$lg-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$lg-width}) and (max-width: #{$xl-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl-width}) and (max-width: #{$xxl-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: #{$xxl-width}) {
+    @content;
+  }
+}
+
+
+
+
+@mixin xs-up {
+  @media (min-width: #{$xs-width}) {
+    @content;
+  }
+}
+
+@mixin sm-up {
+  @media (min-width: #{$sm-width}) {
+    @content;
+  }
+}
+
+@mixin md-up {
+  @media (min-width: #{$md-width}) {
+    @content;
+  }
+}
+
+@mixin lg-up {
+  @media (min-width: #{$lg-width}) {
+    @content;
+  }
+}
+
+@mixin xl-up {
+  @media (min-width: #{$xl-width}) {
+    @content;
+  }
+}
+
+@mixin xxl-up {
+  @media (min-width: #{$xxl-width}) {
+    @content;
+  }
+}
