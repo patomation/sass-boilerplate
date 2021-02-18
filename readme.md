@@ -1,4 +1,4 @@
-# Sass Boilerplate including Bootstrap
+# Sass Boilerplate
 Inverted Triangle CSS structure
 Get started easily with sass styles with this customizable boilerplate.
 
